@@ -1,0 +1,71 @@
+{
+    "name": "psito/psito",
+    "description": "The Psito Platform.",
+    "homepage": "http://www.psito.org",
+    "keywords": ["framework", "psito"],
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Patrick Stewart",
+            "email": "dev@psito.org",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/psito/psito/issues",
+        "forum": "http://psito.org/forum/",
+        "docs": "http://psito.org/docs/",
+        "irc": "irc://irc.freenode.net/psito",
+        "source": "https://github.com/psito/psito"
+    },
+    "require": {
+        "php": ">=5.5.9",
+        "laravel/framework": "5.1.*",
+        "wikimedia/composer-merge-plugin": "~1.2"
+    },
+    "extra": {
+        "merge-plugin": {
+            "include": [
+                "packages/Psito/*/composer.json"
+            ]
+        }
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.4",
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~4.0",
+        "phpspec/phpspec": "~2.1"
+    },
+    "autoload": {
+        "classmap": [
+            "app/database"
+        ],
+        "psr-4": {
+            "Psito\\": "app/psito/",
+            "Psito\\Extension\\": "packages/Psito/Extension/src",
+            "Psito\\Foundation\\": "packages/Psito/Foundation/src",
+            "Psito\\Generators\\": "packages/Psito/Generators/src",
+            "Psito\\Menus\\": "packages/Psito/Menus/src",
+            "Psito\\Modules\\": "packages/Psito/Modules/src",
+            "Psito\\Modules\\Module\\": "modules/",
+            "Psito\\Packages\\": "packages/Psito/Packages/src",
+            "Psito\\Plugins\\": "packages/Psito/Plugins/src",
+            "Psito\\Presenters\\": "packages/Psito/Presenters/src",
+            "Psito\\Shortcode\\": "packages/Psito/Shortcode/src",
+            "Psito\\Support\\": "packages/Psito/Support/src",
+            "Psito\\Templates\\": "packages/Psito/Templates/src",
+            "Psito\\Themes\\": "packages/Psito/Themes/src",
+            "Psito\\Widgets\\": "packages/Psito/Widgets/src",
+            "Psito\\Workbench\\": "packages/Psito/Workbench/src"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist"
+    }
+}

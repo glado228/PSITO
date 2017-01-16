@@ -1,0 +1,26 @@
+{
+    "name": "psito/support",
+    "description": "Support Component of Psito Platform Packages",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Culinary Street",
+            "email": "dev@psito.org"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/filesystem": "5.1.*",
+        "illuminate/support": "5.1.*",
+        "erusev/parsedown-extra": "0.7.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Psito\\Support\\": ""
+        },
+        "files": [
+            "src/Helpers.php"
+        ]
+    },
+    "minimum-stability": "stable"
+}

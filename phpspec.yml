@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: Psito
+        psr4_prefix: Psito
+        src_path: app/psito

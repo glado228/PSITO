@@ -1,0 +1,34 @@
+{
+    "name": "psito/modules",
+    "description": "Laravel 5 Modules",
+    "keywords": ["modules", "laravel", "psito"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Culinary Street",
+            "email": "dev@psito.org"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "laravel/framework": "~5.1",
+        "laravelcollective/html": "~5.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "~0.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Psito\\Modules\\": "src"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "suggest": {
+        "wikimedia/composer-merge-plugin": "Allows the ability to create and merge composer.json files for your individual modules for module-specific dependency management."
+    }
+}

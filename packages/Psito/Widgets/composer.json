@@ -1,0 +1,25 @@
+{
+    "name": "psito/widgets",
+    "description": "Psito Platform Widgets",
+    "keywords": ["widgets", "laravel", "psito"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Culinary Street",
+            "email": "dev@psito.org"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "5.1.*",
+        "illuminate/config": "5.1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Psito\\Widgets\\": "src/"
+        }
+    },
+    "suggest": {
+        "psito/templates": "Psito Platform Twig integration package"
+    }
+}

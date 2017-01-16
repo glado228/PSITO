@@ -1,0 +1,36 @@
+{
+    "name": "psito/menus",
+    "description": "Psito Menus",
+    "keywords": [
+        "laravel",
+        "menus",
+        "psito",
+        "navigation",
+        "nav",
+        "bootstrap"
+    ],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Culinary Street",
+            "email": "dev@psito.orgm"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "5.1.*",
+        "illuminate/config": "5.1.*",
+        "illuminate/view": "5.1.*",
+        "laravelcollective/html": "~5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4",
+        "mockery/mockery": "~0.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Psito\\Menus\\": "src"
+        }
+    },
+    "minimum-stability": "stable"
+}

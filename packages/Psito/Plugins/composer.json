@@ -1,0 +1,42 @@
+{
+    "name": "psito/plugins",
+    "description": ":package_description",
+    "keywords": [
+        "league",
+        ":package_name"
+    ],
+    "homepage": "https://github.com/psito/plugins",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Culinary Street",
+            "email": "dev@psito.org"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "5.1.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*",
+        "scrutinizer/ocular": "~1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Psito\\Plugins\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Psito\\Plugins\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

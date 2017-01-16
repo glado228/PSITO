@@ -1,0 +1,53 @@
+{
+    "name": "psito/extension",
+    "description": ":package_description",
+    "keywords": [
+        "league",
+        ":package_name"
+    ],
+    "homepage": "https://github.com/psito/extension",
+    "license": "MIT",
+    "authors": [
+                 {
+                     "name": "Culinary Street",
+                     "email": "dev@psito.org"
+                 }
+        ],
+    "require": {
+         "php": ">=5.5.9",
+         "symfony/console": "2.7.3",
+         "illuminate/config": "5.1.*",
+         "illuminate/console": "5.1.*",
+         "illuminate/container": "5.1.*",
+         "illuminate/contracts": "5.1.*",
+         "illuminate/database": "5.1.*",
+         "illuminate/filesystem": "5.1.*",
+         "illuminate/support": "5.1.*",
+         "jumilla/laravel-versionia": "~1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*",
+        "scrutinizer/ocular": "~1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Psito\\Extension\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Psito\\Extension\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
